@@ -4,7 +4,7 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen bg-transparent text-white flex items-center justify-center px-4 pt-20 overflow-hidden"
     >
-      {/* 🔥 Fondo blur + partículas */}
+      {/*Fondo blur + partículas */}
       <div className="absolute inset-0 z-0">
         
         {/* Gradiente base */}
@@ -21,9 +21,9 @@ export default function Hero() {
         {/* FOTO */}
         <div className="flex-shrink-0 relative group">
           <img
-            src="/imgPerfil.jpeg"
+            src={process.env.PUBLIC_URL + "/imgPerfil.jpeg"}
             alt="Gonzalo Pastorino"
-            className="w-48 h-48 md:w-72 md:h-72 rounded-full object-cover object-[center_25%] border-4 border-green-400 transition-transform duration-300 group-hover:scale-105"
+            className="w-56 h-56 md:w-80 md:h-80 rounded-full object-cover object-[center_30%] border-4 border-green-400 transition-transform duration-300 group-hover:scale-105"
           />
 
           {/* Glow */}

@@ -3,16 +3,18 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 export default function Projects() {
   const projects = [
     {
-      title: "Sistema de Historiales Medicos",
-      description: "Aplicación web orientada a médicos que facilita la gestión de historias clínicas, permitiendo registrar pacientes, almacenar sus datos y acceder a un panorama claro y eficiente de la atención diaria. Este proyecto fue desarrollado como trabajo final de una diplomatura Full Stack.",
-      image: "/projects/HistoriasMedicas.jpg",
+      title: "Sistema de Historiales Médicos",
+      description:
+        "Aplicación web orientada a médicos que facilita la gestión de historias clínicas, permitiendo registrar pacientes, almacenar sus datos y acceder a un panorama claro y eficiente de la atención diaria. Este proyecto fue desarrollado como trabajo final de una diplomatura Full Stack.",
+      image: process.env.PUBLIC_URL + "/projects/HistoriasMedicas.jpg",
       tech: ["React", "Node", "MongoDB", "Bootstrap"],
       github: "https://github.com/gonzalopastorino/HistorialMedico",
     },
     {
       title: "Portfolio Web",
-      description: "Portfolio moderno con animaciones y diseño responsive.",
-      image: "/projects/portfolio.jpg",
+      description:
+        "Portfolio moderno con animaciones, diseño responsive y buenas prácticas de desarrollo.",
+      image: process.env.PUBLIC_URL + "/projects/portfolio.jpg",
       tech: ["React", "Tailwind"],
       github: "https://github.com/",
     },
@@ -50,7 +52,7 @@ export default function Projects() {
               />
 
               {/* OVERLAY */}
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-6">
+              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-6">
 
                 {/* INFO */}
                 <h3 className="text-xl font-semibold text-green-400 mb-2">
@@ -83,10 +85,21 @@ export default function Projects() {
                   >
                     <FaGithub />
                   </a>
+
+                  {/* (Opcional) Demo */}
+                  {/* 
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-green-400 transition"
+                  >
+                    <FaExternalLinkAlt />
+                  </a>
+                  */}
                 </div>
 
               </div>
-
             </div>
           ))}
 
