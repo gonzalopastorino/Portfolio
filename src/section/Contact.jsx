@@ -47,11 +47,8 @@ export default function Contact() {
     <section id="contact" className="bg-gray-900 text-white py-20 px-4">
       <div className="max-w-6xl mx-auto">
 
-        {/* TITULO */}
         <div className="mb-12 text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Contacto
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Contacto</h2>
           <div className="w-16 h-1 bg-green-400 mt-2 mx-auto md:mx-0 rounded"></div>
         </div>
 
@@ -114,7 +111,6 @@ export default function Contact() {
           {/* INFO */}
           <div className="flex flex-col justify-center gap-6">
 
-            {/* CV DOWNLOAD */}
             <div className="bg-gray-800 p-6 rounded-xl flex flex-col gap-3">
 
               <div className="flex items-center gap-3 text-gray-300">
@@ -123,7 +119,7 @@ export default function Contact() {
               </div>
 
               <a
-                href="/CV Gonzalo Pastorino.pdf"
+                href={process.env.PUBLIC_URL + "/cv-gonzalo-pastorino.pdf"}
                 download
                 className="bg-green-500 hover:bg-green-600 transition px-4 py-2 rounded-lg font-semibold text-white w-fit"
               >
@@ -132,7 +128,6 @@ export default function Contact() {
 
             </div>
 
-            {/* REDES */}
             <div className="bg-gray-800 p-6 rounded-xl flex gap-4 text-2xl">
               <a
                 href="https://github.com/gonzalopastorino"
